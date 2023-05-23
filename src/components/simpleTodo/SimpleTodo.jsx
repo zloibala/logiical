@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const defaultTodos = localStorage.getItem("Esma's todo").split("");
+const defaultTodos = localStorage.getItem("Esma's todo");
 console.log("lol", defaultTodos);
 
 const SimpleTodo = () => {

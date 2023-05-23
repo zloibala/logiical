@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const defaultTodos = localStorage.getItem("Esma's todo");
+const defaultTodos = localStorage.getItem("Esma's todo").split("");
 console.log("lol", defaultTodos);
 
 const SimpleTodo = () => {
@@ -13,7 +13,7 @@ const SimpleTodo = () => {
 
   const onClickHandler = () => {
     setTodoList([...todoList, todo]);
-    localStorage.setItem("Esma's toDo", todoList);
+    localStorage.setItem("Esma's toDo", [...todoList, todo]);
 
     setTodo(""); // reset the input
     console.log("hello", todoList);

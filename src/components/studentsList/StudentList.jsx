@@ -5,20 +5,18 @@ import React from "react";
 const StudentList = () => {
   const showStudents = students.map((el, index) => {
     return (
-      <li key={index}>
-        {el.name}, prefers {el.hobby}{" "}
-        <img src={el.picture} width="150px" height="150px" />
-      </li>
+      <div className="card" key={index}>
+        <img className="img" src={el.picture} />
+        <h3 className="names"> {el.name}</h3>
+
+        <h3>likes {el.hobby} </h3>
+      </div>
     );
   });
-
-  // with map we should always pass a key to a high parent- key={index}
-  // key will not be shown in the browser, this is for REACT
-
-  return (
-    <div>
-      <ol> {showStudents} </ol>
-    </div>
-  );
+  return <div className="container">{showStudents}</div>;
 };
+
 export default StudentList;
+
+// with map we should always pass a key to a high parent- key={index}
+// key will not be shown in the browser, this is for REACT

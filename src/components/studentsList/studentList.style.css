@@ -3,7 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-div {
+.container {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 23%;
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 1px pink;
+}
+
+.img {
+  width: 100%;
+  height: 12rem;
+}
+
+h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.names {
+  color: gold;
+  font-family: "Courier New", Courier, monospace;
 }

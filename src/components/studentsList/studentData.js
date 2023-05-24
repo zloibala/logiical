@@ -32,7 +32,7 @@ export const students = [
   {
     name: "Alina",
     hobby: "bicycle",
-    picture: "https://source.unsplash.com/?portraits&7",
+    picture: "https://source.unsplash.com/random?portraits&7",
   },
   {
     name: "Tink",

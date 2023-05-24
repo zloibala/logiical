@@ -3,21 +3,54 @@ import "./studentList.style.css";
 import React from "react";
 
 const students = [
-  { name: "Tom", hobby: "soccer" },
-  { name: "Elnura", hobby: "soccer" },
-  { name: "Aidina", hobby: "bootcamps" },
-  { name: "Shahzod", hobby: "travel" },
-  { name: "Murat", hobby: "chess" },
-  { name: "Esma", hobby: "yoga" },
-  { name: "Alina", hobby: "bicycle" },
-  { name: "Tink", hobby: "soccer" },
+  {
+    name: "Tom",
+    hobby: "soccer",
+    picture: "https://source.unsplash.com/random/?portraits&1",
+  },
+  {
+    name: "Elnura",
+    hobby: "soccer",
+    picture: "https://source.unsplash.com/random/?portraits&2",
+  },
+  {
+    name: "Aidina",
+    hobby: "bootcamps",
+    picture: "https://source.unsplash.com/random?portraits&3",
+  },
+  {
+    name: "Shahzod",
+    hobby: "travel",
+    picture: "https://source.unsplash.com/random?portraits&4",
+  },
+  {
+    name: "Murat",
+    hobby: "chess",
+    picture: "https://source.unsplash.com/random/?portraits&5",
+  },
+  {
+    name: "Esma",
+    hobby: "yoga",
+    picture: "https://source.unsplash.com/random?portraits&6",
+  },
+  {
+    name: "Alina",
+    hobby: "bicycle",
+    picture: "https://source.unsplash.com/?portraits&7",
+  },
+  {
+    name: "Tink",
+    hobby: "soccer",
+    picture: "https://source.unsplash.com/random/?portraits&8",
+  },
 ];
 
 const StudentList = () => {
   const showStudents = students.map((el, index) => {
     return (
       <li key={index}>
-        {el.name}, likes {el.hobby}
+        {el.name}, prefers {el.hobby}{" "}
+        <img src={el.picture} width="150px" height="150px" />
       </li>
     );
   });
